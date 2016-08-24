@@ -1,0 +1,46 @@
+{
+  "Readme Content" : {
+    "prefix": "readme",
+    "body": [
+      "# ${1:Project Name} - ${2:repository}",
+      "",
+      "> ${3:Description}",
+      "",
+      "## Requirements",
+      "",
+      "$4",
+      "",
+      "## Author",
+      "",
+      "[${5:Rene Bentes Pinto}](http://github.com/${6:renebentes})",
+      "",
+      "## License",
+      "",
+      "* This project licensed under terms of the [${7:GNU/GPLv2}](http://github.com/$6/$2/blob/master/LICENSE)",
+      "",
+      "## Bugs/Requests",
+      "",
+      "You can [report a bug or request a feature here](http://github.com/$6/$2/issues)",
+      "",
+      "## TODO",
+      "",
+      "$8",
+      "",
+      "## Release Notes",
+      "",
+      "You can [see the release notes here](http://github.com/$6/$2/blob/master/CHANGELOG.md)"
+    ],
+    "description": "Adiciona conteúdo a arquivos README.md em projetos."
+  },
+  "Changelog Initial Content": {
+    "prefix": "changelog",
+    "body": [
+      "CHANGELOG",
+      "=============",
+      "\n${1:Este arquivo refere-se às mudanças realizadas desde a versão inicial de desenvolvimento.}\n",
+      "* 0.1.0 - ${2:dd/MM/YYYY}",
+      "  * Message - ${3:Estágio inicial de desenvolvimento}"
+    ],
+    "description": "Adiciona conteúdo inicial a arquivos CHANGELOG.md"
+  }
+}
