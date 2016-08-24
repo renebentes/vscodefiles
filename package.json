@@ -1,0 +1,23 @@
+{
+  "name": "vscodefiles",
+  "version": "1.0.0",
+  "description": "My personal VS Code Files",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renebentes/vscodefiles.git"
+  },
+  "keywords": [
+    "code",
+    "files"
+  ],
+  "author": "Rene Bentes Pinto <renebentes@yahoo.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renebentes/vscodefiles/issues"
+  },
+  "homepage": "https://github.com/renebentes/vscodefiles#readme"
+}
