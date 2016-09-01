@@ -1,0 +1,22 @@
+{
+    "Header Joomla": {
+        "prefix": "joomla-header",
+        "body": [
+            "<?php",
+            "/**",
+            " * @package     Joomla.${1:Administrator}",
+            " * @subpackage  ${2:Components}.${3:Project}",
+            " * @since       ${4:0.1.0}",
+            " *",
+            " * @author      ${5:Rene Bentes Pinto} <${6:renebentes@yahoo.com.br}>",
+            " * @link        ${7:http://renebentes.github.io}",
+            " * @copyright   Copyright (C) ${8:YYYY} ${9:Rene Bentes Pinto, Inc}. All rights reserved.",
+            " * @license     ${10:GNU General Public License version 2 or later}; see LICENSE",
+            " */",
+            "",
+            "// No direct access.",
+            "defined('_JEXEC') or die('Restricted access!');"
+        ],
+        "description": "Adiciona cabeçalho em arquivos php Joomla."
+    }
+}

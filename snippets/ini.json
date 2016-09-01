@@ -1,0 +1,46 @@
+{
+    "INI Header": {
+		"prefix": "header-ini",
+		"body": [
+            "; ${1:Project Name}",
+            "; Author ${2:Rene Bentes Pinto} <${3:renebentes@yahoo.com.br}>",
+            "; Link ${4:http://renebentes.github.io}",
+            "; Copyright (C) ${5:year} ${6:Rene Bentes Pinto, Inc}. All rights reserved.",
+            "; License under the terms of the ${7:GNU General Public License version 2 or later}; see LICENSE",
+            "; Note : All ini files need to be saved as UTF-8 - No BOM\n"
+        ],
+		"description": "Adiciona cabeçalho em arquivos INI"
+	},
+    "Joomla Language Basic": {
+        "prefix": "joomla-language-basic",
+        "body": [
+            "; Basic",
+            "${1:COM}_${2:PROJECT}=\"$3\"",
+            "$1_$2_XML_DESCRIPTION=\"$4\""
+        ],
+        "description": "Adiciona nome e descrição da extensão Joomla em arquivos de globalização"
+    },
+    "Joomla Language Field": {
+        "prefix": "joomla-language-field",
+        "body": [
+            "${1:COM}_${2:PROJECT}_${3:VIEWNAME_OR_PARAMETER_}FIELD_${4:NAME}_LABEL=\"$5\"",
+            "$1_$2_$3FIELD_$4_DESC=\"$6\""
+        ],
+        "description": "Adiciona entradas para campos de formulários e parâmetros em arquivos de globalização"
+    },
+    "Joomla Language Field Option": {
+        "prefix": "joomla-language-field-option",
+        "body": [
+            "${1:COM}_${2:PROJECT}_${3:VIEWNAME_OR_PARAMETER_}FIELD_${4:NAME}_VALUE_${5:OPTION}=\"$6\""
+        ],
+        "description": "Adiciona opções para campos do tipo lista, radio de formulários e parâmetros em arquivos de globalização"
+    },
+    "Joomla Language Fieldset": {
+        "prefix": "joomla-language-fieldset",
+        "body": [
+            "${1:COM}_${2:PROJECT}_${3:VIEWNAME_OR_PARAMETER_}FIELDSET_${4:NAME}_LABEL=\"$5\"",
+            "$1_$2_$3FIELDSET_$4_DESC=\"$6\""
+        ],
+        "description": "Adiciona entradas para fieldsets de formulários e parâmetros em arquivos de globalização"
+    }
+}

@@ -1,0 +1,247 @@
+{
+    "Joomla Field Text": {
+        "prefix": "joomla-field-text",
+        "body": [
+            "<field",
+            "\tname=\"${1:name}\"",
+            "\ttype=\"text\"",
+            "\tlabel=\"${2:COM}_${3:PROJECT}_${4:VIEWNAME_OR_PARAMETER_}FIELD_$1_LABEL\"",
+            "\tdescription=\"$2_$3_$4FIELD_$1_DESC\"",
+            "/>"
+        ],
+        "description": "Adiciona campos do tipo texto."
+    },
+    "Joomla Module Manifest": {
+        "prefix": "joomla-module-manifest",
+        "body": [
+            "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+            "<extension type=\"module\" version=\"${1:3.3.0}\" client=\"${2:site}\" method=\"upgrade\">",
+            "\t<name>mod_${3:name}</name>",
+	        "\t<creationDate>$4</creationDate>",
+	        "\t<author>${5:Rene Bentes Pinto}</author>",
+        	"\t<authorEmail>${6:renebentes@yahoo.com.br}</authorEmail>",
+	        "\t<authorUrl>${7:http://renebentes.github.io}</authorUrl>",
+	        "\t<copyright>Copyright (C) ${8:year} ${9:Rene Bentes Pinto, Inc}. All rights reserved.</copyright>",
+	        "\t<license>${10:GNU General Public License version 2 or later}; see LICENSE</license>",
+	        "\t<version>${11:0.1.0}</version>",
+	        "\t<description>MOD_$3_XML_DESCRIPTION</description>",
+	        "\t<files>",
+		    "\t\t<filename module=\"mod_$3\">mod_$3.php</filename>",
+            "\t\t<filename>index.html</filename>",
+		    "\t\t<folder>tmpl</folder>",
+	        "\t</files>",
+	        "\t<languages>",
+		    "\t\t<language tag=\"en-GB\">en-GB/en-GB.mod_$3.ini</language>",
+            "\t\t<language tag=\"en-GB\">en-GB/en-GB.mod_$3.sys.ini</language>",
+		    "\t\t<language tag=\"pt-BR\">en-GB/pt-BR.mod_$3.ini</language>",
+            "\t\t<language tag=\"pt-BR\">en-GB/pt-BR.mod_$3.sys.ini</language>",
+	        "\t</languages>",
+	        "\t<config>",
+		    "\t\t<fields name=\"params\">",
+		    "\t\t</fields>",
+	        "\t</config>",
+            "</extension>"
+        ],
+        "description": "Adiciona arquivo de manifesto para módulos"
+    },
+    "Joomla Spacer Field": {
+        "prefix": "joomla-field-spacer",
+        "body": "<field type=\"spacer\" hr=\"true\" />",
+        "description": "Adiciona campo spacer"
+    },
+    "Joomla Fieldset Simple": {
+        "prefix": "joomla-fieldset-simple",
+        "body": [
+            "<fieldset name=\"${1:basic}\">",
+            "\t",
+            "</fieldset>"
+        ],
+        "description": "Adiciona um fieldset simples, sem descrição ou label"
+    },
+    "Joomla Fieldset": {
+        "prefix": "joomla-fieldset",
+        "body": [
+            "<fieldset",
+            "\tname=\"${1:basic}\"",
+            "\tlabel=\"${2:COM}_${3:PROJECT}_${4:VIEWNAME_OR_PARAMETER_}FIELDSET_$1_LABEL\"",
+            "\tdescription=\"$2_$3_$4FIELDSET_$1_DESC\"",
+            ">",
+            "\t",
+            "</fieldset>"
+        ],
+        "description": "Adiciona um fieldset com descrição e label"
+    },
+    "Joomla Fieldset Full": {
+        "prefix": "joomla-fieldset-full",
+        "body": [
+            "<fieldset",
+            "\tname=\"${1:basic}\"",
+            "\tlabel=\"${2:COM}_${3:PROJECT}_${4:VIEWNAME_OR_PARAMETER_}FIELDSET_$1_LABEL\"",
+            "\tdescription=\"$2_$3_$4FIELDSET_$1_DESC\"",
+            "\taddrulepath=\"${5:/administrator/components/$2_$3}${6:/models}/rules\"",
+            "\taddfieldpath=\"$5$6/fields\"",
+            ">",
+            "\t",
+            "</fieldset>"
+        ],
+        "description": "Adiciona um fieldset completo com descrição, label, caminhos para regras de validação e campos"
+    },
+    "Joomla Field Radio": {
+        "prefix": "joomla-field-radio",
+        "body": [
+            "<field",
+            "\tname=\"${1:name}\"",
+            "\ttype=\"radio\"",
+            "\tlabel=\"${2:COM}_${3:PROJECT}_${4:VIEWNAME_OR_PARAMETER_}FIELD_$1_LABEL\"",
+            "\tdescription=\"$2_$3_$4FIELD_$1_DESC\"",
+            "\tclass=\"btn-group btn-group-yesno\"",
+            "\tdefault=\"1\"",
+            ">",
+            "\t<option value=\"0\">JNO</option>",
+            "\t<option value=\"1\">JYES</option>",
+            "</field>"
+        ],
+        "description": "Adiciona campos do tipo radio"
+    },
+    "Joomla Field Custom": {
+        "prefix": "joomla-field-custom",
+        "body": [
+            "<field",
+            "\tname=\"${1:name}\"",
+            "\ttype=\"${2:custom}\"",
+            "\tlabel=\"${3:COM}_${4:PROJECT}_${5:VIEWNAME_OR_PARAMETER_}FIELD_$1_LABEL\"",
+            "\tdescription=\"$3_$4_$5FIELD_$1_DESC\"",
+            "\trequired=\"true\"",
+            "/>"
+        ],
+        "description": "Adiciona campos personalizados"
+    },
+    "Joomla Package Manifest Component": {
+        "prefix": "joomla-package-manifest-component",
+        "body": "<file type=\"component\" id=\"com_${1:helloworld}\">com_$1.zip</file>",
+        "description": "Adiciona tag para componentes em manifesto de pacotes Joomla"
+    },
+    "Joomla Package Manifest Language": {
+        "prefix": "joomla-package-manifest-language",
+        "body": "<file type=\"language\" id=\"${1:pt-BR}\" client=\"${2:site}\">$2_$1.zip</file>",
+        "description": "Adiciona tag para arquivos de tradução em manifesto de pacotes Joomla"
+    },
+    "Joomla Package Manifest Library": {
+        "prefix": "joomla-package-manifest-library",
+        "body": "<file type=\"library\" id=\"${1:helloworld}\">lib_1.zip</file>",
+        "description": "Adiciona tag para arquivos de tradução em manifesto de pacotes Joomla"
+    },
+    "Joomla Package Manifest Module": {
+        "prefix": "joomla-package-manifest-module",
+        "body": "<file type=\"module\" id=\"${1:helloworld}\" client=\"${2:site}\">mod_$1.zip</file>",
+        "description": "Adiciona tag para módulos em manifesto de pacotes Joomla"
+    },
+    "Joomla Package Manifest Plugin": {
+        "prefix": "joomla-package-manifest-plugin",
+        "body": "<file type=\"plugin\" id=\"${1:helloworld}\" group=\"${2:system}\">plg_$2_$1.zip</file>",
+        "description": "Adiciona tag para plugins em manifesto de pacotes Joomla"
+    },
+    "Joomla Package Manifest Template": {
+        "prefix": "joomla-package-manifest-template",
+        "body": "<file type=\"template\" id=\"${1:helloworld}\" client=\"${2:site}\">tpl_$1.zip</file>",
+        "description": "Adiciona tag para templates em manifesto de pacotes Joomla"
+    },
+    "Joomla Template Manifest": {
+        "prefix": "joomla-template-manifest",
+        "body": [
+            "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+            "<extension version=\"${1:3.3.0}\" type=\"template\" client=\"${2:site}\" method=\"upgrade\">",
+            "\t<name>${3:hello}</name>",
+	        "\t<creationDate>$4</creationDate>",
+	        "\t<author>${5:Rene Bentes Pinto}</author>",
+	        "\t<authorEmail>${6:renebentes@yahoo.com.br}</authorEmail>",
+	        "\t<authorUrl>${7:http://renebentes.github.io}</authorUrl>",
+	        "\t<copyright>Copyright (C) ${8:year} ${9:Rene Bentes Pinto, Inc}. All rights reserved.</copyright>",
+	        "\t<license>${10:GNU General Public License version 2 or later}; see LICENSE</license>",
+	        "\t<version>${11:0.1.0}</version>",
+	        "\t<description>TPL_$3_XML_DESCRIPTION</description>",
+	        "\t<files>",
+		    "\t\t<folder>css</folder>",
+		    "\t\t<folder>fonts</folder>",
+		    "\t\t<folder>html</folder>",
+		    "\t\t<folder>images</folder>",
+		    "\t\t<folder>js</folder>",
+		    "\t\t<filename>CHANGELOG.md</filename>",
+		    "\t\t<filename>LICENSE</filename>",
+		    "\t\t<filename>README.md</filename>",
+		    "\t\t<filename>component.php</filename>",
+		    "\t\t<filename>error.php</filename>",
+		    "\t\t<filename>favicon.ico</filename>",
+		    "\t\t<filename>helper.php</filename>",
+		    "\t\t<filename>index.html</filename>",
+		    "\t\t<filename>index.php</filename>",
+		    "\t\t<filename>offline.php</filename>",
+		    "\t\t<filename>template_preview.png</filename>",
+		    "\t\t<filename>template_thumbnail.png</filename>",
+		    "\t\t<filename>templateDetails.xml</filename>",
+	        "\t</files>",
+	        "\t<positions>",
+		    "\t\tjoomla-template-manifest-position${4:-default}
+	        "\t</positions>
+	        "\t<languages folder="language">
+		    "\t\t<language tag="en-GB">en-GB/en-GB.tpl_${2/(.+)/\L\1/g}.ini</language>
+		    "\t\t<language tag="en-GB">en-GB/en-GB.tpl_${2/(.+)/\L\1/g}.sys.ini</language>
+		    "\t\t<language tag="pt-BR">pt-BR/pt-BR.tpl_${2/(.+)/\L\1/g}.ini</language>
+		    "\t\t<language tag="pt-BR">pt-BR/pt-BR.tpl_${2/(.+)/\L\1/g}.sys.ini</language>
+	        "\t</languages>
+	        "\t<config>
+		    "\t\t<fields name="params">
+			"\t\t\t<fieldset name="basic">
+			"\t\t\t\t<field
+			"\t\t\t\t\tname="favicon"
+			"\t\t\t\t\ttype="media"
+			"\t\t\t\t\tlabel="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_FAVICON_LABEL"
+			"\t\t\t\t\tdescription="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_FAVICON_DESC"
+			"\t\t\t\t/>
+			"\t\t\t\t<field
+			"\t\t\t\t\tname="logo"
+			"\t\t\t\t\ttype="media"
+			"\t\t\t\t\tlabel="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_LOGO_LABEL"
+			"\t\t\t\t\tdescription="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_LOGO_DESC"
+			"\t\t\t\t/>
+			"\t\t\t\t<field
+			"\t\t\t\t\tname="name"
+			"\t\t\t\t\ttype="text"
+			"\t\t\t\t\tlabel="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_NAME_LABEL"
+			"\t\t\t\t\tdescription="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_NAME_DESC"
+			"\t\t\t\t\trequired="true"
+			"\t\t\t\t/>
+			"\t\t\t\t<field
+			"\t\t\t\t\tname="slogan"
+			"\t\t\t\t\ttype="text"
+			"\t\t\t\t\tlabel="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_SLOGAN_LABEL"
+			"\t\t\t\t\tdescription="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_SLOGAN_DESC"
+			"\t\t\t\t/>
+			"\t\t\t</fieldset>
+			"\t\t\t<fieldset name="advanced">
+			"\t\t\t\t<field
+			"\t\t\t\tname="disablejs"
+			"\t\t\t\t\ttype="radio"
+			"\t\t\t\t\tlabel="TPL_$3_PARAMETER_FIELD_DISABLEJS_LABEL"
+			"\t\t\t\t\tdescription="TPL_$3_PARAMETER_FIELD_DISABLEJS_DESC"
+			"\t\t\t\t\tdefault="1"
+			"\t\t\t\t>
+			"\t\t\t\t\t<option value="0">JNO</option>
+			"\t\t\t\t\t<option value="1">JYES</option>
+			"\t\t\t\t</field>
+			"\t\t\t\t<field
+			"\t\t\t\t\tname="filejs"
+			"\t\t\t\t\ttype=\"textarea\"",
+			"\t\t\t\t\tlabel=\"TPL_$3_PARAMETER_FIELD_FILEJS_LABEL",
+			"\t\t\t\t\tdescription=\"TPL_$3_PARAMETER_FIELD_FILEJS_DESC\"",
+			"\t\t\t\t\tcols=\"30\"",
+			"\t\t\t\t\trows=\"4\"",
+			"\t\t\t\t/>",
+			"\t\t\t</fieldset>",
+		    "\t\t</fields>",
+	        "\t</config>",
+            "</extension>"
+        ],
+        "description": "Adiciona conteúdo de arquivo de manifesto para templates."
+    }
+}
