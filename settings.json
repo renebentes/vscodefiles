@@ -1,7 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
-	"csscomb.autoFormatOnSave": true,
-	"editor.renderIndentGuides": true,
-    "editor.renderWhitespace": true,
-    "http.proxy": "http://atualizacoes:Kj4qgSUJTB1000@10.89.28.22:3128"
+    "csscomb.autoFormatOnSave": true,
+    "editor.renderIndentGuides": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.formatOnSave": true,
+    "phpcs.standard": "Joomla"
 }
