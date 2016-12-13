@@ -42,5 +42,20 @@
             "$1_$2_$3FIELDSET_$4_DESC=\"$6\""
         ],
         "description": "Adiciona entradas para fieldsets de formulários e parâmetros em arquivos de globalização"
-    }
+    },
+    "Joomla .editorconfig": {
+      "prefix": "joomla-editorconfig",
+      "body": [
+            "root = true",
+            "",
+            "[*]",
+            "indent_style = tab",
+            "indent_size = 4",
+            "end_of_line = lf",
+            "charset = utf-8",
+            "trim_trailing_whitespace = true",
+            "insert_final_newline = true"
+        ],
+        "description": "Conteúdo padrão do .editorconfig para desenvolvimento Joomla"
+  }
 }
