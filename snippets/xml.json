@@ -11,6 +11,20 @@
         ],
         "description": "Adiciona campos do tipo texto."
     },
+    "Joomla Field Text Area": {
+        "prefix": "joomla-field-textarea",
+        "body": [
+            "<field",
+            "\tname=\"${1:name}\"",
+            "\ttype=\"textarea\"",
+            "\tlabel=\"${2:COM}_${3:PROJECT}_${4:VIEWNAME_OR_PARAMETER_}FIELD_$1_LABEL\"",
+            "\tdescription=\"$2_$3_$4FIELD_$1_DESC\"",
+            "\trows=\"${5:4}\"",
+            "\tcolumns=\"${6:30}\"",
+            "/>"
+        ],
+        "description": "Adiciona campos do tipo área de texto."
+    },
     "Joomla Module Manifest": {
         "prefix": "joomla-module-manifest",
         "body": [
@@ -181,56 +195,54 @@
 		    "\t\t<filename>templateDetails.xml</filename>",
 	        "\t</files>",
 	        "\t<positions>",
-		    "\t\tjoomla-template-manifest-position${4:-default}
-	        "\t</positions>
-	        "\t<languages folder="language">
-		    "\t\t<language tag="en-GB">en-GB/en-GB.tpl_${2/(.+)/\L\1/g}.ini</language>
-		    "\t\t<language tag="en-GB">en-GB/en-GB.tpl_${2/(.+)/\L\1/g}.sys.ini</language>
-		    "\t\t<language tag="pt-BR">pt-BR/pt-BR.tpl_${2/(.+)/\L\1/g}.ini</language>
-		    "\t\t<language tag="pt-BR">pt-BR/pt-BR.tpl_${2/(.+)/\L\1/g}.sys.ini</language>
-	        "\t</languages>
-	        "\t<config>
-		    "\t\t<fields name="params">
-			"\t\t\t<fieldset name="basic">
-			"\t\t\t\t<field
-			"\t\t\t\t\tname="favicon"
-			"\t\t\t\t\ttype="media"
-			"\t\t\t\t\tlabel="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_FAVICON_LABEL"
-			"\t\t\t\t\tdescription="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_FAVICON_DESC"
-			"\t\t\t\t/>
-			"\t\t\t\t<field
-			"\t\t\t\t\tname="logo"
-			"\t\t\t\t\ttype="media"
-			"\t\t\t\t\tlabel="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_LOGO_LABEL"
-			"\t\t\t\t\tdescription="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_LOGO_DESC"
-			"\t\t\t\t/>
-			"\t\t\t\t<field
-			"\t\t\t\t\tname="name"
-			"\t\t\t\t\ttype="text"
-			"\t\t\t\t\tlabel="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_NAME_LABEL"
-			"\t\t\t\t\tdescription="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_NAME_DESC"
-			"\t\t\t\t\trequired="true"
-			"\t\t\t\t/>
-			"\t\t\t\t<field
-			"\t\t\t\t\tname="slogan"
-			"\t\t\t\t\ttype="text"
-			"\t\t\t\t\tlabel="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_SLOGAN_LABEL"
-			"\t\t\t\t\tdescription="TPL_${3/(.+)/\U\1/g}_PARAMETER_FIELD_SLOGAN_DESC"
-			"\t\t\t\t/>
-			"\t\t\t</fieldset>
-			"\t\t\t<fieldset name="advanced">
-			"\t\t\t\t<field
-			"\t\t\t\tname="disablejs"
-			"\t\t\t\t\ttype="radio"
-			"\t\t\t\t\tlabel="TPL_$3_PARAMETER_FIELD_DISABLEJS_LABEL"
-			"\t\t\t\t\tdescription="TPL_$3_PARAMETER_FIELD_DISABLEJS_DESC"
-			"\t\t\t\t\tdefault="1"
-			"\t\t\t\t>
-			"\t\t\t\t\t<option value="0">JNO</option>
-			"\t\t\t\t\t<option value="1">JYES</option>
-			"\t\t\t\t</field>
-			"\t\t\t\t<field
-			"\t\t\t\t\tname="filejs"
+		    "\t\tjoomla-template-manifest-position${12:-default}",
+	        "\t</positions>",
+	        "\t<languages folder=\"language\">",
+		    "\t\t<language tag=\"${13:pt-BR}\">$13/$13.tpl_$3.ini</language>",
+		    "\t\t<language tag=\"$13\">$13/$13.tpl_$3.sys.ini</language>",
+	        "\t</languages>",
+	        "\t<config>",
+		    "\t\t<fields name=\"params\">",
+			"\t\t\t<fieldset name=\"basic\">",
+			"\t\t\t\t<field",
+			"\t\t\t\t\tname=\"favicon\"",
+			"\t\t\t\t\ttype=\"media\"",
+			"\t\t\t\t\tlabel=\"TPL_$3_PARAMETER_FIELD_FAVICON_LABEL\"",
+			"\t\t\t\t\tdescription=\"TPL_$3_PARAMETER_FIELD_FAVICON_DESC\"",
+			"\t\t\t\t/>",
+			"\t\t\t\t<field",
+			"\t\t\t\t\tname=\"logo\"",
+			"\t\t\t\t\ttype=\"media\"",
+			"\t\t\t\t\tlabel=\"TPL_$3_PARAMETER_FIELD_LOGO_LABEL\"",
+			"\t\t\t\t\tdescription=\"TPL_$3_PARAMETER_FIELD_LOGO_DESC\"",
+			"\t\t\t\t/>",
+			"\t\t\t\t<field",
+			"\t\t\t\t\tname=\"name\"",
+			"\t\t\t\t\ttype=\"text\"",
+			"\t\t\t\t\tlabel=\"TPL_$3_PARAMETER_FIELD_NAME_LABEL\"",
+			"\t\t\t\t\tdescription=\"TPL_$3_PARAMETER_FIELD_NAME_DESC\"",
+			"\t\t\t\t\trequired=\"true\"",
+			"\t\t\t\t/>",
+			"\t\t\t\t<field",
+			"\t\t\t\t\tname=\"slogan\"",
+			"\t\t\t\t\ttype=\"text\"",
+			"\t\t\t\t\tlabel=\"TPL_$3_PARAMETER_FIELD_SLOGAN_LABEL\"",
+			"\t\t\t\t\tdescription=\"TPL_$3_PARAMETER_FIELD_SLOGAN_DESC\"",
+			"\t\t\t\t/>",
+			"\t\t\t</fieldset>",
+			"\t\t\t<fieldset name=\"advanced\">",
+			"\t\t\t\t<field",
+			"\t\t\t\tname=\"disablejs\"",
+			"\t\t\t\t\ttype=\"radio\"",
+			"\t\t\t\t\tlabel=\"TPL_$3_PARAMETER_FIELD_DISABLEJS_LABEL\"",
+			"\t\t\t\t\tdescription=\"TPL_$3_PARAMETER_FIELD_DISABLEJS_DESC\"",
+			"\t\t\t\t\tdefault=\"1\"",
+			"\t\t\t\t>",
+			"\t\t\t\t\t<option value=\"0\">JNO</option>",
+			"\t\t\t\t\t<option value=\"1\">JYES</option>",
+			"\t\t\t\t</field>",
+			"\t\t\t\t<field",
+			"\t\t\t\t\tname=\"filejs\"",
 			"\t\t\t\t\ttype=\"textarea\"",
 			"\t\t\t\t\tlabel=\"TPL_$3_PARAMETER_FIELD_FILEJS_LABEL",
 			"\t\t\t\t\tdescription=\"TPL_$3_PARAMETER_FIELD_FILEJS_DESC\"",
@@ -243,5 +255,13 @@
             "</extension>"
         ],
         "description": "Adiciona conteúdo de arquivo de manifesto para templates."
+    },
+    "Joomla Manifest New Language": {
+        "prefix": "joomla-manifest-new-language",
+        "body": [
+            "<language tag=\"${1:en-GB}\">$1/$1.${2:com}_${3:name}.ini</language>",
+            "<language tag=\"$1\">$1/$1.$2$3.sys.ini</language>"
+        ],
+        "description": "Adiciona linguagem a arquivos de manifesto de extensões Joomla."
     }
 }

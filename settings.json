@@ -2,5 +2,7 @@
 {
     "csscomb.autoFormatOnSave": true,
     "editor.renderIndentGuides": true,
-    "editor.renderWhitespace": "boundary"
+    "editor.renderWhitespace": "boundary",
+    "editor.formatOnSave": true,
+    "phpcs.standard": "Joomla"
 }

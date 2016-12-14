@@ -1,0 +1,15 @@
+{
+    "Blank File" : {
+        "prefix": "blank",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html>",
+            "<head>",
+            "\t<title>&nbsp;</title>",
+            "</head>",
+            "<body></body>",
+            "</html>"
+        ],
+        "description": "Adiciona conteúdo em branco para arquivos index.html"
+    }
+}
