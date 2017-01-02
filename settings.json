@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "csscomb.autoFormatOnSave": true,
+    "csscomb.formatOnSave": true,
     "editor.renderIndentGuides": true,
     "editor.renderWhitespace": "boundary",
     "editor.formatOnSave": true,
