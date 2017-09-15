@@ -333,9 +333,9 @@
   },
   "prettier.singleQuote": true,
   "typescriptHero.resolver.importGroups": [
-    "Plains",
     "/@angular/",
     "/rxjs/",
+    "Plains",
     "Modules",
     "Workspace"
   ]
