@@ -4,7 +4,6 @@
   "editor.renderWhitespace": "boundary",
   "editor.formatOnSave": true,
   "phpcs.standard": "PSR2",
-  "http.proxy": "http://atualizacoes:Kj4qgSUJTB1000@10.89.28.22:3128",
   "workbench.colorTheme": "Visual Studio Dark",
   "workbench.iconTheme": "vs-seti",
   "terminal.integrated.shell.windows":
