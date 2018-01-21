@@ -346,5 +346,6 @@
         "Plains",
         "Modules",
         "Workspace"
-    ]
+    ],
+    "git.autofetch": true
 }
