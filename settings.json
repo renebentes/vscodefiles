@@ -340,12 +340,12 @@
         ]
     },
     "prettier.singleQuote": true,
-    "typescriptHero.resolver.importGroups": [
+    "git.autofetch": true,
+    "typescriptHero.imports.grouping": [
         "/@angular/",
-        "/rxjs/",
         "Plains",
+        "/rxjs/",
         "Modules",
         "Workspace"
-    ],
-    "git.autofetch": true
+    ]
 }
